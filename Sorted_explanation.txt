@@ -1,0 +1,27 @@
+in isSorted(data, currentDataItem, typeOfSort):
+
+- if current item is NaN
+	-> we are at the last element of array
+	-> so if typeOfSort!=UNSORTED, the array is sorted
+	-> else, it is unsorted
+- if currentDataItem is 0, meaning we're at the first element in array
+	-> if the array size is 2 or 3, it is sorted by definition (think about why this is the case. look at the test cases i sent where theres only 2 or 3 elements in array. array size must be greater than 1 since one element is always NaN)
+		-> return true (or return isSorted with typeOfSort=SORTED)
+	-> else, the array size is >=3, so we check what the next element is
+		-> if nextItem>currentItem: sequence is ASCENDING so far
+		-> if nextItem<currentItem: sequenc[e is DESCENDING so far
+		-> if nextItem==currentItem: sequence is UNKNOWN so far (which is fine, look at the test cases)
+			-> also look at the test cases where every item is the same, and where almost every item is the same except one. 
+				when can an array ever be of UNKNOWN sort? (hint: only before there is a change in what the next element is)
+
+- the switch case
+	-> if the sequence was ASCENDING till now:
+		-> was the previous item <= current? if so, still ascending
+		-> else, UNSORTED for sure
+	-> if sequence was DESCENDING till now:
+		-> was the previous item >= current item? if so, still descending
+		-> else, UNSORTED
+	-> if sequence was UNKNOWN till now:
+		-> if previous item was < current item, its now ascending
+		-> if previous item was > current item, its now descending
+		-> else, still unknown

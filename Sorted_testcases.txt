@@ -1,0 +1,24 @@
+//Sorted:
+float data1[] = {0,1,2,3,4,5,6,NaN};
+float data2[] = {1,-1,-3,-5,-9,NaN};
+
+
+float data3[] = {0,0,0,0,0,0,0,0,NaN};
+
+float data4[] = {1,0,0,0,0,0,0,NaN};
+float data5[] = {-1,0,0,0,0,0,NaN};
+float data6[] = {-10,-1,0,1,10,NaN};
+float data7[] = {1,2,3,3,3,4,5,5,6,NaN};
+
+float data8[] = {1,NaN};
+float data9[] = {-9,NaN};
+float data10[] = {1,0,NaN};
+float data11[] = {7,0,NaN};
+float data12[] = {6,66,NaN};
+float data13[] = {0,0,NaN};
+
+
+//Unsorted: 
+float data14[] = {-1,-1,-1,-1,-1,-1,0,-1,NaN};
+float data15[] = {0,1,2,3,4,5,6,7,8,9,1,NaN};
+float data16[] = {-1,0,1,0,-1,0,1,0,NaN};

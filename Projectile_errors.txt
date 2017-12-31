@@ -1,0 +1,24 @@
+Failed: tester returned 1.
+Wrong destX for inputs: 
+h, b, t, w, m, v, theta
+50, 30, 20, 20, 1, 9.2, 67.89
+You returned: 6.9255
+Correct answer: 14.4757
+
+Failed: tester returned 1.
+Wrong destX for inputs: 
+h, b, t, w, m, v, theta
+50, 30, 20, 20, 1, 24.2, 27.89
+You returned: 64.1673
+Correct answer: 97.3619
+
+Failed: tester returned 1.
+Wrong destY for inputs: 
+h, b, t, w, m, v, theta
+50, 30, 20, 20, 1, 24.2, 27.89
+You returned: 39.8605
+Correct answer: 0
+
+Failed: tester returned 1.
+Wrong destY for theta = 90
+You returned: 0
